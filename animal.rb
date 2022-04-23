@@ -1,14 +1,16 @@
 class Animal
   attr_reader :name
+
   def initialize(name)
     @name = name
   end
 
-  def eat(food)
-    "#{@name} eats a #{food}"
+  def self.phyla
+    ['Ecdysozoa', 'Lophotrochozoa', 'Deuterostomia', 'Bilateria', 'Non-Bilateria']
   end
 
-  def self.phyla
-    ['Ecdysozoa', 'Lophotrochozoa', 'Deuterostomia']
+  def eat(food)
+  "#{@name} eats a #{food}"
   end
+
 end
